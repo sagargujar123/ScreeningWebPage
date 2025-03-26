@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html type="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Html rowspan and colspan</title>
+<style type=text/css>
+
+	#main1, #main2, #main3{
+		width: 35%;
+    	height: auto;
+    	margin:14px auto;
+    	border: 1px solid lightgrey;
+		padding: 4px 7px;
+		cursor:pointer;
+	}
+
+	.submain{
+    	display: flex;
+    	align-items: center;
+		padding: 4px 7px;
+	}
+
+	input[type='radio']{
+		accent-color:#ff1460;
+	}
+
+	.price-box{
+		display:flex;
+		align-items:center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0px 15px;
+	}
+
+	.bold-text{
+		font-weight:bold;
+	}
+
+	.mark{
+	    padding: 1px 4px;
+		color: white;
+		background: #ff1460;
+	}
+	
+	#dropdown1, #dropdown2, #dropdown3{
+		margin: 10px 35px;
+	}
+	
+	tr,td{
+		padding:5px;
+	}
+	
+	select{
+		width:80px;
+	}
+</style>
+</head>
+<body>
+<div class = "container">
+<h1 align="center"><font color="red"><b>YAY! It's BOGO</b></font></h1>
+
+<!-- First and start block -->
+<div id="main1">
+	<div onclick="toggleDropdown1()" class="submain">
+		<div id="radio-button"><input type="radio" name="option" id="radio1"></div>
+		<div class="price-box">
+			<div class="bold-text">1 Unit<span style="font-size:14px; font-weight:100; color:blue">
+				<mark class="mark">10% Off</mark></span>
+				<br><span style="font-size:14px; font-weight:100;">Standard Price</span>
+			</div>
+			<div  class="bold-text">$10.00 USD<br>
+				<span style="font-size:13px; color:#d3d3d3"><del>$24.00 USD</del></span>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropdown1">
+		<table cellpadding="2" cellspacing="2">
+		<tr>
+			<th></th>
+			<th>Size</th>
+			<th>Colour</th>
+		</tr>
+		<tr>
+			<td>#1</td>
+			<td>
+				<select>
+					<option>S</option>
+					<option>11</option>
+				</select>
+			</td>
+			<td>
+				<select>
+					<option>Black</option>
+					<option>Colour</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>#2</td>
+			<td>
+				<select>
+					<option>S</option>
+					<option>22</option>
+				</select>
+			</td>
+			<td>
+				<select>
+					<option>Colour</option>
+					<option>Yellow</option>
+				</select>
+			</td>
+		</tr>
+
+		</table>
+	</div>
+</div>
+
+<!-- Second and middle block -->
+<div id="main2">
+	<div onclick="toggleDropdown2()" class="submain">
+		<div id="radio-button"><input type="radio" name="option" id="radio2"></div>
+		<div class="price-box">
+			<div class="bold-text">2 Unit<span style="font-size:14px; font-weight:100; color:blue">
+				<mark class="mark">20% Off</mark></span>
+			</div>
+			<div  class="bold-text">$18.00 USD<br>
+				<span style="font-size:13px; color:#d3d3d3"><del>$24.00 USD</del></span>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropdown2">
+		<table cellpadding="2" cellspacing="2">
+		<tr>
+			<th></th>
+			<th>Size</th>
+			<th>Colour</th>
+		</tr>
+		<tr>
+			<td>#1</td>
+			<td>
+				<select>
+					<option>S</option>
+					<option>11</option>
+				</select>
+			</td>
+			<td>
+				<select>
+					<option>Black</option>
+					<option>Colour</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>#2</td>
+			<td>
+				<select>
+					<option>S</option>
+					<option>22</option>
+				</select>
+			</td>
+			<td>
+				<select>
+					<option>Colour</option>
+					<option>Yellow</option>
+				</select>
+			</td>
+		</tr>
+
+		</table>
+	</div>
+</div>
+
+<!-- Third and last block -->
+<div id="main3">
+	<div onclick="toggleDropdown3()" class="submain">
+		<div id="radio-button"><input type="radio" name="option" id="radio3"></div>
+		<div class="price-box">
+			<div class="bold-text">3 Unit<span style="font-size:14px; font-weight:100; color:blue">
+				<mark class="mark">30% Off</mark></span>
+			</div>
+			<div  class="bold-text">$24.00 USD<br>
+				<span style="font-size:13px; color:#d3d3d3"><del>$24.00 USD</del></span>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropdown3">
+		<table cellpadding="2" cellspacing="2">
+		<tr>
+			<th></th>
+			<th>Size</th>
+			<th>Colour</th>
+		</tr>
+		<tr>
+			<td>#1</td>
+			<td>
+				<select>
+					<option>S</option>
+					<option>11</option>
+				</select>
+			</td>
+			<td>
+				<select>
+					<option>Black</option>
+					<option>Colour</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>#2</td>
+			<td>
+				<select>
+					<option>S</option>
+					<option>22</option>
+				</select>
+			</td>
+			<td>
+				<select>
+					<option>Colour</option>
+					<option>Yellow</option>
+				</select>
+			</td>
+		</tr>
+
+		</table>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+	//Initially opened dropdownblock, mainblock and radio button content
+var preOpenedDrpdwnBlock=null;  
+var preOpenedMainBlock=null;		 
+var preSelectedRadioBtn=null;	 
+
+	// Hide all dropdowns initially
+document.getElementById("dropdown1").style.display = "none";
+document.getElementById("dropdown2").style.display = "none";
+document.getElementById("dropdown3").style.display = "none";
+
+	//Stores all id's value in variables and pass to function
+function toggleDropdown1() {
+    let dropdownId = document.getElementById("dropdown1");
+    let mainId = document.getElementById("main1");
+    let radioId = document.getElementById("radio1");
+    myFunction(dropdownId, mainId, radioId);
+}
+
+function toggleDropdown2() {
+    let dropdownId = document.getElementById("dropdown2");
+    let mainId = document.getElementById("main2");
+    let radioId = document.getElementById("radio2");
+    myFunction(dropdownId, mainId, radioId);
+}
+
+function toggleDropdown3() {
+    let dropdownId = document.getElementById("dropdown3");
+    let mainId = document.getElementById("main3");
+    let radioId = document.getElementById("radio3");
+    myFunction(dropdownId, mainId, radioId);
+}
+
+function myFunction(dropdownBlock, mainBlock, radioBtn){
+
+	//Checks for initially opened block and dynamically closed it with initial style
+   if (preOpenedDrpdwnBlock && preOpenedDrpdwnBlock !== dropdownBlock && preOpenedDrpdwnBlock.style.display === "block") {
+
+        preOpenedDrpdwnBlock.style.display = "none";
+        preOpenedMainBlock.style.border = "1px solid lightgrey";
+        preOpenedMainBlock.style.backgroundColor = "white";
+        preSelectedRadioBtn.checked = false;
+      }
+
+	//conditionally check and update style on opened and closed block
+	
+    if (dropdownBlock.style.display === "none") {
+        dropdownBlock.style.display = "block";
+        preOpenedDrpdwnBlock = dropdownBlock;
+        preOpenedMainBlock = mainBlock;
+        preSelectedRadioBtn = radioBtn;
+        mainBlock.style.border = "3px solid #ff1460";
+        mainBlock.style.backgroundColor = "#fdf8f8";
+        radioBtn.checked = true;
+    } else {
+        dropdownBlock.style.display = "none";
+        mainBlock.style.border = "1px solid lightgrey";
+        mainBlock.style.backgroundColor = "white";
+        radioBtn.checked = false;
+    }
+}
+
+</script>
+</div>
+</body>
+</html>
