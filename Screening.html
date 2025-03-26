@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Html rowspan and colspan</title>
+	
 <style type=text/css>
-
 	#main1, #main2, #main3{
 		width: 35%;
-    	height: auto;
-    	margin:14px auto;
-    	border: 1px solid lightgrey;
+    		height: auto;
+    		margin:14px auto;
+    		border: 1px solid lightgrey;
 		padding: 4px 7px;
 		cursor:pointer;
 	}
 
 	.submain{
-    	display: flex;
-    	align-items: center;
+    		display: flex;
+    		align-items: center;
 		padding: 4px 7px;
 	}
 
@@ -39,8 +39,8 @@
 
 	.mark{
 	    padding: 1px 4px;
-		color: white;
-		background: #ff1460;
+	    color: white;
+	    background: #ff1460;
 	}
 	
 	#dropdown1, #dropdown2, #dropdown3{
@@ -112,7 +112,6 @@
 				</select>
 			</td>
 		</tr>
-
 		</table>
 	</div>
 </div>
@@ -168,7 +167,6 @@
 				</select>
 			</td>
 		</tr>
-
 		</table>
 	</div>
 </div>
@@ -224,7 +222,6 @@
 				</select>
 			</td>
 		</tr>
-
 		</table>
 	</div>
 </div>
@@ -232,17 +229,17 @@
 
 <script type="text/javascript">
 
-	//Initially opened dropdownblock, mainblock and radio button content
+//Initially opened dropdownblock, mainblock and radio button content
 var preOpenedDrpdwnBlock=null;  
 var preOpenedMainBlock=null;		 
 var preSelectedRadioBtn=null;	 
 
-	// Hide all dropdowns initially
+// Hide all dropdowns initially
 document.getElementById("dropdown1").style.display = "none";
 document.getElementById("dropdown2").style.display = "none";
 document.getElementById("dropdown3").style.display = "none";
 
-	//Stores all id's value in variables and pass to function
+//Stores all id's value in variables and pass to function
 function toggleDropdown1() {
     let dropdownId = document.getElementById("dropdown1");
     let mainId = document.getElementById("main1");
@@ -266,7 +263,8 @@ function toggleDropdown3() {
 
 function myFunction(dropdownBlock, mainBlock, radioBtn){
 
-	//Checks for initially opened block and dynamically closed it with initial style
+//Checks for initially opened block and dynamically closed it with initial style
+	
    if (preOpenedDrpdwnBlock && preOpenedDrpdwnBlock !== dropdownBlock && preOpenedDrpdwnBlock.style.display === "block") {
 
         preOpenedDrpdwnBlock.style.display = "none";
@@ -275,7 +273,7 @@ function myFunction(dropdownBlock, mainBlock, radioBtn){
         preSelectedRadioBtn.checked = false;
       }
 
-	//conditionally check and update style on opened and closed block
+//conditionally check and update style on opened and closed block
 	
     if (dropdownBlock.style.display === "none") {
         dropdownBlock.style.display = "block";
